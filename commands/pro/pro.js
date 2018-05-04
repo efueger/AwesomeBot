@@ -66,6 +66,21 @@ function getPros(bot, lang) {
   return langPros.filter(user => online.has(user)).join('\n');
 }
 
+
+
+
+module.exports = {
+  usage: [
+    'please gimme a topic, will\'ya?',
+    'pro <topic> - list of people who knows about <topic>',
+    'pro reset - reload all the pro data (mod only)',
+  ],
+
+  run: (bot, message, cmdArgs) => {
+    if (!cmdArgs) {
+      return true;
+    }
+
 module.exports = {
   usage: [
     'please gimme a topic, will\'ya?',
