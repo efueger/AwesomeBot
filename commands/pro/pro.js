@@ -90,7 +90,7 @@ module.exports = {
 
   run: (bot, message, cmdArgs) => {
     if (!cmdArgs) {
-      return true;
+      return false;
     }
 
     let lang = cmdArgs.toLowerCase().trim();
